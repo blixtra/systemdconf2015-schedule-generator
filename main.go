@@ -46,7 +46,7 @@ func main() {
 	defer f.Close()
 
 	table := tablewriter.NewWriter(f)
-	table.SetHeader([]string{"Day", "Start", "End", "Title", "Speaker", "Organization"})
+	table.SetHeader([]string{"Day", "Start", "End", "Title", "Speaker(s)", "Organization(s)"})
 	table.SetRowLine(true)
 
 	s := genSchedule(records)
